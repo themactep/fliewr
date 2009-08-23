@@ -1,0 +1,46 @@
+== Fliewr (Flickr Viewr) ==
+
+  Flickr friends photostream viewer.
+
+
+=== Licence ===
+
+  New BSD License
+
+
+=== Requirements: ===
+
+  * Ruby
+    http://www.ruby-lang.org/
+
+  * GTK+
+    http://www.mozilla.org/
+
+  * Gecko engine from Mozilla
+    http://www.mozilla.org/
+
+  * Ruby Gtk2 bindings and Ruby/GTK bindings for Mozilla
+    from Ruby-GNOME2 Project
+    http://ruby-gnome2.sourceforge.jp/
+
+  * LibXml Ruby
+    http://libxml.rubyforge.org/
+
+  * REST Client
+    http://github.com/adamwiggins/rest-client/
+
+
+=== Installation ===
+
+  $ sudo gem source -a http://gems.github.com/
+  $ sudo gem install themactep-fliewr
+
+
+=== Homepage ===
+
+  http://themactep.com/fliewr
+
+
+=== Authors ===
+
+  Paul Philippov <themactep@gmail.com>

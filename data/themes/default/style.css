@@ -1,0 +1,72 @@
+body {
+  padding : 0;
+  color : #999;
+  color : #fff;
+  background : #333;
+  line-height : 1.250;
+  font : 12px "NokiaSansCn", "LucidaGrande", sans-serif;
+}
+body, img {
+  margin : 0;
+}
+img {
+  border : none;
+}
+div, h1, p, a {
+  margin-bottom : 0;
+}
+a {
+  color : #fff;
+  text-decoration : none;
+}
+div.error {
+  padding : 10px;
+}
+div.message {
+  clear : both;
+  position : relative;
+  padding : 7px;
+  margin : 5px;
+  color : #bbb;
+  background-color : #444;
+  -moz-border-radius : 7px;
+}
+a.image {
+  display : block;
+  height : 130px;
+  background-position : center;
+}
+div.userpic {
+  width : 55px;
+  height : 100%;
+  float : left;
+}
+div.imgbox {
+  width : 48px;
+  height : 48px;
+  margin-bottom : 5px;
+  background-repeat : no-repeat;
+}
+div.popup {
+  position : absolute;
+  left : 7px;
+  right : 7px;
+  bottom : 7px;
+  background-color : #000;
+  padding : 5px;
+  display : none;
+}
+div.message:hover div.popup {
+  display : inherit;
+}
+h1 {
+  font : bold 11px "NokiaSans", "LucidaGrande", sans-serif;
+  margin-top : 0;
+  height : 2.500em;
+  overflow : hidden;
+  color : #ff0;
+}
+p.time {
+  font-size : 10px;
+  text-align : right;
+}

@@ -1,0 +1,22 @@
+#!/usr/bin/env ruby 
+# 
+=begin
+  Flickr Viewr - Flickr Friends Photostream Viewer.
+
+  Copyright (c) 2008, Paul Philippov <paul@ppds.ws>
+
+  This software is released under the BSD License.
+  http://creativecommons.org/licenses/BSD/
+=end
+
+begin
+  require 'rubygems'
+rescue LoadError
+  nil
+end
+
+require 'fliewr/core'
+
+Fliewr::Core.new
+Thread.new { Fliewr::StatusIcon.new }
+$app.main

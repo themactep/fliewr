@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Fliewr
+Comment=Flickr Viewr
+Exec=fliewr
+Icon=fliewr
+StartupNotify=true
+Terminal=false
+Type=Application
+Categories=Network;
