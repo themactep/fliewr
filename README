@@ -14,7 +14,7 @@
     http://www.ruby-lang.org/
 
   * GTK+
-    http://www.mozilla.org/
+    http://www.gtk.org/
 
   * Gecko engine from Mozilla
     http://www.mozilla.org/
@@ -32,8 +32,7 @@
 
 === Installation ===
 
-  $ sudo gem source -a http://gems.github.com/
-  $ sudo gem install themactep-fliewr
+  $ sudo gem install fliewr
 
 
 === Homepage ===
