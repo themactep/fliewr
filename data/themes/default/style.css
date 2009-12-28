@@ -4,7 +4,7 @@ body {
   color : #fff;
   background : #333;
   line-height : 1.250;
-  font : 12px "NokiaSansCn", "LucidaGrande", sans-serif;
+  font : 12px "NokiaSansCn", "LiberationSans", "LucidaGrande", sans-serif;
 }
 body, img {
   margin : 0;
@@ -26,15 +26,17 @@ div.message {
   clear : both;
   position : relative;
   padding : 7px;
-  margin : 5px;
+  margin : 5px 5px 0;
   color : #bbb;
   background-color : #444;
   -moz-border-radius : 7px;
 }
 a.image {
   display : block;
-  height : 130px;
+  width: 240px;
+  height : 240px;
   background-position : center;
+  background-repeat: no-repeat;
 }
 div.userpic {
   width : 55px;
@@ -60,7 +62,7 @@ div.message:hover div.popup {
   display : inherit;
 }
 h1 {
-  font : bold 11px "NokiaSans", "LucidaGrande", sans-serif;
+  font : bold 11px "NokiaSans", "LiberationSans", "LucidaGrande", sans-serif;
   margin-top : 0;
   height : 2.500em;
   overflow : hidden;

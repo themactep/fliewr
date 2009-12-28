@@ -21,7 +21,7 @@ module Fliewr
 
       self.set_title 'Fliewr'
       self.set_icon self.logo
-      self.set_width_request 278
+      self.set_width_request 279
       self.set_height_request 400
       self.set_allow_shrink false
       self.set_default_width $cfg.get(:window_width).to_i
@@ -30,10 +30,10 @@ module Fliewr
 
       theme = $cfg.get(:theme) || 'default'
       theme_root = File.join(DATA_ROOT,'themes',theme)
-      self.theme_base  = File.open(File.join(theme_root,'theme.html'), "r") { |f| f.read }
-      self.theme_item  = File.open(File.join(theme_root,'item.html'), "r") { |f| f.read }
-      self.theme_error = File.open(File.join(theme_root,'error.html'), "r") { |f| f.read }
-      self.theme_style = File.open(File.join(theme_root,'style.css'), "r") { |f| f.read }
+      self.theme_base  = File.read(File.join(theme_root,'theme.html'))
+      self.theme_item  = File.read(File.join(theme_root,'item.html'))
+      self.theme_error = File.read(File.join(theme_root,'error.html'))
+      self.theme_style = File.read(File.join(theme_root,'style.css'))
 
       self.signal_connect(:destroy) { quit }
       self.signal_connect(:delete_event) { minimize }
@@ -258,7 +258,7 @@ module Fliewr
       self.license      = "This software is released under the BSD License.\nhttp://creativecommons.org/licenses/BSD/"
       self.authors      = ['Paul Philippov <paul@ppds.ws>']
       self.documenters  = ['Paul Philippov <paul@ppds.ws>']
-      self.website      = "http://fliewr.googlecode.com/"
+      self.website      = "http://themactep.com/fliewr/"
       self.logo         = $gui.logo
       self.run
       self.destroy
